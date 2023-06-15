@@ -23,7 +23,7 @@ public class DriverLifecycleSetting {
 	public void beforeEach() {
 		// create the options
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headleass");
+		options.addArguments("--headless");
 		
 		driver = new ChromeDriver(options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
