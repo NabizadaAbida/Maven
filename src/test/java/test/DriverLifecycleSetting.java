@@ -25,6 +25,7 @@ public class DriverLifecycleSetting {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless");
 		
+		// Create the browser
 		driver = new ChromeDriver(options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
